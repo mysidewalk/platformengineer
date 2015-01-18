@@ -1,0 +1,25 @@
+Basics Overview
+===============
+
+git is technically a Distributed Version Control System (DVCS)
+    - you can change, stage, and store your code without any network connection
+    - can be used as the functional equivalent of a CVCS, without losing the DVCS benefits
+
+
+MindMixer Git Philosophy 
+==========
+
+We use a modified version of a common git workflow called "git flow"
+
+Core traits include:
+    - central repo of "truth"
+    - each branch should represent one of:
+	- feature or "topic"-worth of work
+	- a release (these are statically-defined as "qa", "stage", and "master")
+	- a hotfix
+    - close control of feature branches keeps origin/master as the sole source of "good/vettted" code
+    - therefore, feature branches... 
+	- are branched from master
+	- are merged back into qa
+	- move from qa (qa) to stage (stage) to master (prod)
+    - 
