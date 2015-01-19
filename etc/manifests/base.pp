@@ -16,6 +16,8 @@ file {"remove-nginx-default-conf":
 file {"add-nginx-default-conf":
     path => '/etc/nginx/sites-enabled/training',
     ensure => present,
-    require => Package['nginx'],
+    require => [ Package['nginx'],
+		 File['remove-nginx-default-conf']
+		],
     source => "/vagrant/etc/nginx/training",
 }
