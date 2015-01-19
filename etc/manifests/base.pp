@@ -7,6 +7,12 @@ package {"nginx":
     require => Exec['apt-get update']
 }
 
+service {"nginx":
+    ensure => 'running',
+    enable => 'true',
+    require => Package['nginx'],
+}
+
 file {"remove-nginx-default-conf":
     path => '/etc/nginx/sites-enabled/default',
     ensure => absent,
@@ -14,6 +20,7 @@ file {"remove-nginx-default-conf":
 }
 
 file {"add-nginx-default-conf":
+    notify  => Service["nginx"], # establish restart relationship between config and service
     path => '/etc/nginx/sites-enabled/training',
     ensure => present,
     require => [ Package['nginx'],
