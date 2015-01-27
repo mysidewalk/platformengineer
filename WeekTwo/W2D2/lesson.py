@@ -33,7 +33,6 @@ ex_dict = {
 # controlling flow in Python. This is a brief overview and far from definitive.
 # More here: http://en.wikibooks.org/wiki/Python_Programming/Control_Flow
 
-
 # Example 1: 'if' statements
 # Purpose: Simple 'if' statement with 'elif' and 'else'.
 #   Only accepts integers (no 'float', 'complex', or other datatypes than 'int')
@@ -67,19 +66,17 @@ def control_flow_tuple_for(ex_list_of_tuples):
 # Example 4: 'while' loops
 # A function illustrating various usages of controlling flow
 # with python's built-in control flow statements
-def flow_control(ex_integer):
-    for i in range(ex_integer):
-        print "This print loops should run " + str(ex_integer) + " times."
-
-#
-#A function illustrating usage of var
-def show_range():
-    return 0
+def control_flow_simple_while(ex_list):
+    i = 0
+    while i < len(ex_list):
+        print ex_list[i]
+        i += 1
+    else:
+        print "Done."
 
 # Boilerplate message if invoked without function explicitly called
 def main():
     print bpl.usage_notify()
-
 
 # Again, ignore this for now (unless you want to change the default function
 # invocation from main() to something else...)
