@@ -27,6 +27,8 @@ def alpha_ranger():
 
     Hint: Take a look at python's 'string' module
     '''
+    for i in string.ascii_lowercase():
+        print i;
 
 def meta_dictionary():
     '''
