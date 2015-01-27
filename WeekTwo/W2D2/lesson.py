@@ -76,18 +76,9 @@ def flow_control(ex_integer):
 def show_range():
     return 0
 
-# Usage message if invoked without function explicitly called
+# Boilerplate message if invoked without function explicitly called
 def main():
-    docstring = """
-    This module is primarily designed to be imported by an interactive Python
-    interpreter as part of a larger teaching series.
-
-                Please view the GitHub repository for more info:
-
-                https://github.com/dannykansas/platformengineer
-    """
-
-    print bpl.trim(docstring)
+    print bpl.usage_notify()
 
 
 # Again, ignore this for now (unless you want to change the default function

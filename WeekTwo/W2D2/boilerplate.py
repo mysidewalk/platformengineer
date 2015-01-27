@@ -12,6 +12,18 @@ https://www.python.org/dev/peps/pep-0257/#handling-docstring-indentation
 
 import sys
 
+def usage_notify():
+    _notify_copy = """
+    This module is primarily designed to be imported by an interactive Python
+    interpreter as part of a larger teaching series.
+
+            Please view the GitHub repository for more info:
+
+            https://github.com/dannykansas/platformengineer
+    """
+    return trim(_notify_copy)
+
+
 def trim(docstring):
     if not docstring:
         return ''
