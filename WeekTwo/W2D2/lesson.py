@@ -21,7 +21,7 @@ ex_string  = "An example string"
 ex_integer = 15
 ex_list    = ['this','is','a','list','of','strings']
 ex_list_of_tuples  = [(1,1),(2,4),(3,9),(4,16)]
-
+ex_
 
 # Example Group One: flow control, tuple, namedtuple
 # This group contains several functions illustrating various methods for
