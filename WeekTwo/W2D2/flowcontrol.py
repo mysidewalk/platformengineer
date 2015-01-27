@@ -4,6 +4,8 @@
 MindMixer Platform Engineer Training - Part 1
 W2D2 - flow control, sequences, and iterables
 
+Exercises related to: Control Flow Structures
+
 Pro-tip: run a specific function from the command line directly like so:
 python -c 'import this_filename; my_function(a_parameter,b_parameter)'
 (you must be in the directory where "this_filename.py" resides)
@@ -51,3 +53,7 @@ def main():
     other completed functions. You may statically define your
     function parameters
     '''
+
+# Keep this as-is to invoke main.
+if __name__ == '__main__':
+    main()
