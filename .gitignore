@@ -1,2 +1,44 @@
-# Vagrant Stuff
+# A minimal, yet effective, .gitignore
+# 
+# Usage:
+#   Simply uncomment the section(s) specific to your 
+#   type of project (python, ruby, .NET, etc.)
+#
+# Caveats:
+#   Items divided by the "Generic"-labeled section
+#   are generally acceptable for most projects.
+#   
+#   Please take care to ensure you are not excluding
+#   something you needed. Computers are hard, regex
+#   is your friend.
+#
+# License:
+#   Anyone, anywhere, can use this for any non-criminal
+#   purpose. No stipulations.
+#
+# Author:
+#   Danny Fowler 
+#   dan <at> logickc <dot> com )
+#   https://github.com/dannykansas
+
+## Python! ##
+*.pyc
+
+## JavaScript / NodeJS ##
+#/node_modules
+
+##################
+# GENERAL IGNORES
+##################
+
+## Backups and/or temporary files
+*~
+
+## vim swap files.
+*.swp
+
+## Vagrant 
 /.vagrant
+
+## OS X 
+.DS_Store
