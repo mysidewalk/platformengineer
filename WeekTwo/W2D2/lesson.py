@@ -10,25 +10,28 @@ python -c 'import this_filename; my_function(a_parameter,b_parameter)'
 
 '''
 
-# Place our imports here...
+# Place any needed module imports here...
 
 
-# Some variables of various types so we can save time typing
-# example input each time we run a function. Named accordingly.
+# Example 0: A few variables of various data types
+# Purpose: These are global and available to all functions, so we can easily
+#   reference them anywhere and save time typing while also keeping our code
+#   nice and readable. See opening comment for usage specifics / examples...
 ex_string  = "An example string"
 ex_integer = 15
-ex_list    = [1,'one','another item',15]
-ex_tuples  = [(1,1),(2,4),(3,9),(4,16)]
+ex_list    = ['this','is','a','list','of','strings']
+ex_list_of_tuples  = [(1,1),(2,4),(3,9),(4,16)]
 
 
-# Below are several functions illustrating various methods for controlling flow
-# of your programs in Python. This is a brief overview and far from definitive.
+# Example Group One: flow control, tuple, namedtuple
+# This group contains several functions illustrating various methods for
+# controlling flow in Python. This is a brief overview and far from definitive.
 # More here: http://en.wikibooks.org/wiki/Python_Programming/Control_Flow
 
 
-# Example 1: if statements
-# Simple if statement with elif and else.
-# Only accepts integers.
+# Example 1: 'if' statements
+# Purpose: Simple 'if' statement with 'elif' and 'else'.
+#   Only accepts integers (no 'float', 'complex', or other datatypes than 'int')
 def control_flow_if(ex_integer):
     if isinstance(ex_integer,int):
         if ex_integer > 0:
@@ -52,9 +55,10 @@ def control_flow_simple_for(ex_string):
 # Note: A tuple is simply an immutable (unchangeable) list
 #   Tuples are defined with parentheses "()"
 #   Lists are defined with brackets "[]"
-def control_flow_tuple_for(ex_tuples):
-    for i, isquared in ex_tuples:
-        print "At list item number:", ex_tuples[i]+1, "First tuple element"
+def control_flow_tuple_for(ex_list_of_tuples):
+    for i, isquared in ex_list_of_tuples:
+        print "At list item number:", ex_list_of_tuples[i]+1,
+            "First tuple element"
 
 # Example 4: 'while' loops
 # A function illustrating various usages of controlling flow
@@ -63,7 +67,8 @@ def flow_control(ex_integer):
     for i in range(ex_integer):
         print "This print loops should run " + str(ex_integer) + " times."
 
-# A function illustrating usage of var
+#
+#A function illustrating usage of var
 def show_range():
     return 0
 
