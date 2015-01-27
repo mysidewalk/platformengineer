@@ -28,19 +28,11 @@ def alpha_ranger():
     Hint: Take a look at python's 'string' module
     '''
 
-#TODO: Complete meta_dictionary() example
 def meta_dictionary():
     '''
     Complete this function such that - when given a sequence of dictionaries
     with an "id" attribute - it builds a new dictionary mapping IDs to the
     dictionaries themselves.
-
-
-    Example input:
-    list_of_dicts = [{id=1},{id=2},{id=3}]
-
-    Example output from calling meta_dictionary(list_of_dicts):
-    
     '''
 
 def timespan_dicts():
