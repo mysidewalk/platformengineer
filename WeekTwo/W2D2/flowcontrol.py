@@ -50,9 +50,15 @@ def bad_grades():
 def main():
     '''
     For extra points, modify this main function to call your
-    other completed functions. You may statically define your
-    function parameters
+    other completed functions.
+
+    You may statically define the function parameters that are
+    passed in for each function call, or utilize a module to
+    grab arbitrary parameters from the command line invocation.
+
+    Either is perfectly valid.
     '''
+
 
 # Keep this as-is to invoke main.
 if __name__ == '__main__':

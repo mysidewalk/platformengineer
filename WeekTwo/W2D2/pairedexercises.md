@@ -17,4 +17,4 @@ You’ll need to go hunting for various modules to leverage via importing them i
 **Sequences and Iterables: (use the provided file named 'sequitor.py'):**
    - Define function 'alpha_ranger()' that uses range (or xrange) to populate a list or string with all of the lower and uppercased letters from a-z.
    - Define function 'meta_dictionary()' such that - given a sequence of dictionaries with an "id" attribute - builds a new dictionary mapping ids to the dictionaries themselves.
-   - Using a dictionary-based pattern strategy, define function 'match_dicts()' that will take an integer and a string (one of second, minute, or hour) representing a length of time and return a timespan object equivalent to that length.
+   - Using a dictionary-based pattern strategy, define function 'timespan_dicts()' that will take an integer and a string (one of second, minute, or hour) representing a length of time and return a timespan object equivalent to that length.
