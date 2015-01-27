@@ -11,17 +11,22 @@ python -c 'import this_filename; my_function(a_parameter,b_parameter)'
 '''
 
 # Place any needed module imports here...
-
+import boilerplate as bpl
 
 # Example 0: A few variables of various data types
 # Purpose: These are global and available to all functions, so we can easily
 #   reference them anywhere and save time typing while also keeping our code
 #   nice and readable. See opening comment for usage specifics / examples...
-ex_string  = "An example string"
+ex_string = "Example String"
 ex_integer = 15
-ex_list    = ['this','is','a','list','of','strings']
-ex_list_of_tuples  = [(1,1),(2,4),(3,9),(4,16)]
-ex_
+ex_list = ['this','is','a','list','of','strings']
+ex_list_of_tuples = [(1,1),(2,4),(3,9),(4,16)]
+ex_dict = {
+    "key_one":   1,
+    "key_two":   2,
+    "key_three": 3,
+    "key_four":  4,
+}
 
 # Example Group One: flow control, tuple, namedtuple
 # This group contains several functions illustrating various methods for
@@ -57,8 +62,7 @@ def control_flow_simple_for(ex_string):
 #   Lists are defined with brackets "[]"
 def control_flow_tuple_for(ex_list_of_tuples):
     for i, isquared in ex_list_of_tuples:
-        print "At list item number:", ex_list_of_tuples[i]+1,
-            "First tuple element"
+        print i, ":", isquared
 
 # Example 4: 'while' loops
 # A function illustrating various usages of controlling flow
@@ -74,10 +78,17 @@ def show_range():
 
 # Usage message if invoked without function explicitly called
 def main():
-    print "This python module is designed for use within the interactive"
-    print "interpreter as part of a larger teaching series."
-    print "Please view the repo on GitHub for more info:"
-    print "https://github.com/dannykansas/platformengineer"
+    docstring = """
+    This module is primarily designed to be imported by an interactive Python
+    interpreter as part of a larger teaching series.
+
+                Please view the GitHub repository for more info:
+
+                https://github.com/dannykansas/platformengineer
+    """
+
+    print bpl.trim(docstring)
+
 
 # Again, ignore this for now (unless you want to change the default function
 # invocation from main() to something else...)
