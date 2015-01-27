@@ -56,14 +56,12 @@ def control_flow_tuple_for(ex_tuples):
     for i, isquared in ex_tuples:
         print "At list item number:", ex_tuples[i]+1, "First tuple element"
 
-
-
-
+# Example 4: 'while' loops
 # A function illustrating various usages of controlling flow
 # with python's built-in control flow statements
-def flow_control():
-    for i in range(len("Python!")):
-        print "This print loops should run " + len("Python!") + " times."
+def flow_control(ex_integer):
+    for i in range(ex_integer):
+        print "This print loops should run " + str(ex_integer) + " times."
 
 # A function illustrating usage of var
 def show_range():
@@ -72,9 +70,11 @@ def show_range():
 # Usage message if invoked without function explicitly called
 def main():
     print "This python module is designed for use within the interactive"
-    print "interpreter as part of a larger teaching series.
-    print "Please view the repo on GitHub for more info: 
+    print "interpreter as part of a larger teaching series."
+    print "Please view the repo on GitHub for more info:"
     print "https://github.com/dannykansas/platformengineer"
 
+# Again, ignore this for now (unless you want to change the default function
+# invocation from main() to something else...)
 if __name__ == '__main__':
     main()
