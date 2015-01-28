@@ -15,11 +15,19 @@ python -c 'import this_filename; my_function(a_parameter,b_parameter)'
 # Place any needed module imports here...
 # Example: import modulename as mn
 
-def decorator_placeholder():
+def classproperty():
     '''
-    TODO: Create decorator exercises
+    Define a decorator, “classproperty”, mimicking the behavior of classmethod
+    and property combined (a method that can be called like a property with the
+    class passed in as the first argument)
     '''
 
+def lazyproperty():
+    '''
+    Define a decorator, “lazyproperty”, which will evaluate the value of the
+    method body once for the instance and then store it in a backing field so
+    that it does not have to be evaluated again
+    '''
 
 
 # Keep this as-is to invoke main.
